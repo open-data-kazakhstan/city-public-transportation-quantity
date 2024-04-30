@@ -11,7 +11,7 @@ def data_package():
 workbook = openpyxl.load_workbook('archive/public-transport-quantity.xlsx')
 worksheet = workbook.active
 desired_columns = [1, 34]
-new_values = ["region","quantity","year"]
+new_values = ["Region","Value","Year"]
 with open('archive/public-transport-quantity.csv', 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(new_values)
@@ -32,7 +32,7 @@ def rename_first_column_cells(input_file, output_file, new_names):
                 writer.writerow(row)
 input_file = 'archive/public-transport-quantity.csv'
 output_file = 'data/public-transport-quantity-final.csv'
-new_names = ["region", "Abai", "Akmolinskaya","Aktubinskaya","Almatinskaya","Atyrauskaya","West Kazakhstan","Zhambylskaya","Zhetisu","Karagandinskaya","Kostanaiskaya","Kyzylordinskaya","Mangistauskaya","Pavlodarskaya","North Kazakhstan","Turkestanskaya","Ulytau","East Kazakhstan","Astana city","Almaty city","Shimkent city"]
+new_names = ["Region", "Abai Region", "Akmola Region","Aktobe Region","Almaty Region","Atyrau Region","West Kazakhstan Region","Jambyl Region","Jetisu Region","Karaganda Region","Kostanay Region","Kyzylorda Region","Mangystau Region","Pavlodar Region","North Kazakhstan Region","Turkistan Region","Ulytau Region","East Kazakhstan Region","Astana city","Almaty city","Shymkent city"]
 rename_first_column_cells(input_file, output_file, new_names)
 
 data_package();

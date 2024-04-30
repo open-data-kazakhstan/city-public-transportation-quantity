@@ -11,17 +11,17 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "region",
+                        "name": "Region",
                         "type": "string",
                         "format": "default"
                     },
                     {
-                        "name": "quantity",
+                        "name": "Value",
                         "type": "integer",
                         "format": "default"
                     },
                     {
-                        "name": "year",
+                        "name": "Year",
                         "type": "integer",
                         "format": "default"
                     }
