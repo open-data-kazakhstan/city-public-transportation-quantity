@@ -1,5 +1,8 @@
 # PUBLIC TRANSPORTATION 
 
+## Description
+`data/public-transport-quanity-rate.csv` - main output data, column Transport-quanity is about total amount of public transport in region and Transport-quanity-rate is amont of pulic transport for 1000 inhabitance
+
 ## Data 
 
 Data is in xlsx format and synced with upstream source yearly. It is sourced from https://stat.gov.kz/ru/industries/business-statistics/stat-transport/spreadsheets/
@@ -9,6 +12,7 @@ Data is in xlsx format and synced with upstream source yearly. It is sourced fro
 We have processed the source data to make it normalized and derived from it several aggregated datasets:
 
 * `data/public-transport-quantity-final.csv` - data by segments.
+* `archive/city_population.csv` - city population quantity  taken from repository [city-population](https://github.com/open-data-kazakhstan/city-population)
 
 We have also added some metadata such as column descriptions and [data packaged it][dp].
 
